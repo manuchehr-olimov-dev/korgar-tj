@@ -38,9 +38,14 @@
         </div>
     </header>
     <div class="searchJob" >
-            <h1 class="text-white fw-bold">Работа найдется для каждого.</h1>
+            @if ($userType == "worker")
+                <h1 class="searchJob__title__mobile">Поиск работы в городе<a href="/">Санкт-Петербург</a></h1>
+            @else
+                <h1 class="searchJob__title__mobile">Поиск сотрудника в городе<a href="/">Санкт-Петербург</a></h1>
+            @endif
+            <h1 class="text-white fw-bold searchJob__title__desktop">Работа найдется для каждого.</h1>
             <div class="searchForm">
-                <form action="" method="post" class="d-inline-flex">
+                <form action="" method="post">
                     <input  class="searchInput" type="text" placeholder="Профессия, должность или компания...">
                     <button class=" findButton btn btn-primary ms-2">Найти работу</button>
                     <button class="ms-2"><a href="/vacancies/advanced" class = "bi bi-sliders advancedButton" data-bs-toggle="tooltip" data-bs-title="Default tooltip"  data-bs-placement="bottom"></a> </button>     

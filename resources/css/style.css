@@ -71,8 +71,9 @@ header .create-cv:hover{
 
 /* RESPONSIVE */
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
     header{
+        position: static;
         background-color: rgb(17, 17, 17);
     }
     header .left-side h2{
@@ -88,13 +89,45 @@ header .create-cv:hover{
         display: none;
     }
     .searchJob{
-        display: block;
+        display: flex;
+        justify-content: unset;
+        align-items: unset;
         background: none;
+        margin: 10px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+    }
+    .searchJob .searchForm form .searchInput{
+        width: 100%;
+        border: 1px solid rgb(121, 121, 121);
+    }
+    .searchJob .searchForm form button{
+        display: none;
+    }
+    .searchJob .searchJob__title__desktop{
+        display: none;
+    }
+    .searchJob .searchJob__title__mobile{
+        display: block;
     }
 }
 
-@media (max-width:768px) {
+@media (min-width: 700px) and (max-width:1024px)
+{
     .searchJob{
-        padding: 0px 0px 0px 37.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 0px 0px 0px 75px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .searchJob .searchJob__title__desktop{
+        display: block;
+    }
+    .searchJob .searchJob__title__mobile{
+        display: none;
     }
 }
