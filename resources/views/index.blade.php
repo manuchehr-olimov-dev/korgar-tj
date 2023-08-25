@@ -38,14 +38,17 @@
         </div>
     </header>
     <div class="searchJob" >
+            
             @if ($userType == "worker")
                 <h6 class="searchJob__title__mobile mt-2">Поиск работы в городе <a href="/">Санкт-Петербург</a></h6>
             @else
                 <h6 class="searchJob__title__mobile mt-2">Поиск сотрудника в городе <a href="/">Санкт-Петербург</a></>
             @endif
+
             <h1 class="text-white fw-bold searchJob__title__desktop">Работа найдется для каждого.</h1>
             <div class="searchForm mt-2">
                 <form action="" method="post">
+                    @csrf
                     <input  class="searchInput" type="text" placeholder="Профессия, должность или компания...">
                     <button class=" findButton btn btn-primary ms-2">Найти работу</button>
                     <button class="ms-2"><a href="/vacancies/advanced" class = "bi bi-sliders advancedButton" data-bs-toggle="tooltip" data-bs-title="Default tooltip"  data-bs-placement="bottom"></a> </button>     
