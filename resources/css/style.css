@@ -39,7 +39,6 @@ header .create-cv:hover{
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    padding: 0px 0px 0px 150px;
     width: 100vw;
     height: 100vh;
     background-image: url("./img/img-1.jpg");
@@ -49,6 +48,9 @@ header .create-cv:hover{
 }
 .right-side{
     display: inline-flex ;
+}
+.searchJob .searchForm, .searchJob h1{
+    margin: 0px 0px 0px 150px;
 }
 .searchJob .searchForm form input{
     padding: 10px;
@@ -67,6 +69,9 @@ header .create-cv:hover{
     color: rgb(255, 255, 255);
     background-color: #0087b7;
     padding: 9px 9px;
+}
+.searchJob .searchJob__title__mobile{
+    display: none;
 }
 
 /* RESPONSIVE */
@@ -98,6 +103,9 @@ header .create-cv:hover{
         width: auto;
         height: auto;
     }
+    .searchJob .searchForm{
+        margin: 0px;
+    }
     .searchJob .searchForm form .searchInput{
         width: 100%;
         border: 1px solid rgb(121, 121, 121);
@@ -120,9 +128,11 @@ header .create-cv:hover{
         flex-direction: column;
         justify-content: center;
         align-items: left;
-        padding: 0px 0px 0px 75px;
         width: 100vw;
         height: 100vh;
+    }
+    .searchJob .searchForm, .searchJob h1{
+        margin: 0px 0px 0px 50px;
     }
     .searchJob .searchJob__title__desktop{
         display: block;

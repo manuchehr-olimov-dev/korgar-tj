@@ -39,12 +39,12 @@
     </header>
     <div class="searchJob" >
             @if ($userType == "worker")
-                <h1 class="searchJob__title__mobile">Поиск работы в городе<a href="/">Санкт-Петербург</a></h1>
+                <h6 class="searchJob__title__mobile mt-2">Поиск работы в городе <a href="/">Санкт-Петербург</a></h6>
             @else
-                <h1 class="searchJob__title__mobile">Поиск сотрудника в городе<a href="/">Санкт-Петербург</a></h1>
+                <h6 class="searchJob__title__mobile mt-2">Поиск сотрудника в городе <a href="/">Санкт-Петербург</a></>
             @endif
             <h1 class="text-white fw-bold searchJob__title__desktop">Работа найдется для каждого.</h1>
-            <div class="searchForm">
+            <div class="searchForm mt-2">
                 <form action="" method="post">
                     <input  class="searchInput" type="text" placeholder="Профессия, должность или компания...">
                     <button class=" findButton btn btn-primary ms-2">Найти работу</button>
@@ -52,7 +52,9 @@
                 </form>
             </div>
     </div>
-    
+    <div class="actualVacancies">
+        <h1>Вакансии дня</h1>
+    </div>
 </body>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+ 3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
