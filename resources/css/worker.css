@@ -97,7 +97,7 @@ header .create-cv:hover{
         display: flex;
         justify-content: unset;
         align-items: unset;
-        background: none;
+        background: none !important;
         margin: 10px;
         padding: 0px;
         width: auto;

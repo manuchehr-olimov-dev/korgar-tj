@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/css/worker.css', 'resources/js/app.js'])
 
     
     <title>Document</title>
@@ -16,13 +16,7 @@
             <h2 class = "m-auto">KorgarTJ</h2>
             <div class="btn-group m-auto help ms-3">
                 <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  
-                    @if ($userType == "worker")
-                        <a href="/worker">Ищу работу</a>
-                    @else
-                        <a href="/employer">Ищу сотрудника</a>
-                    @endif
-
+                    <a href="#">Ищу работу</a>
                 </button>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/worker">Ищу работу</a></li>
@@ -39,12 +33,6 @@
     </header>
     <div class="searchJob" >
             
-            @if ($userType == "worker")
-                <h6 class="searchJob__title__mobile mt-2">Поиск работы в городе <a href="/">Санкт-Петербург</a></h6>
-            @else
-                <h6 class="searchJob__title__mobile mt-2">Поиск сотрудника в городе <a href="/">Санкт-Петербург</a></>
-            @endif
-
             <h1 class="text-white fw-bold searchJob__title__desktop">Работа найдется для каждого.</h1>
             <div class="searchForm mt-2">
                 <form action="" method="post">
