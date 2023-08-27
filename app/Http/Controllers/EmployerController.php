@@ -10,4 +10,14 @@ class EmployerController extends Controller
     {
         return view("employer");
     }
+
+    public function SignUp()
+    {
+        return view('employer.sign-up');
+    }
+
+    public function SignIn()
+    {
+        return view('employer.sign-in');
+    }
 }

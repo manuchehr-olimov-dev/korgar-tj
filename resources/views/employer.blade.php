@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    @vite(['resources/css/app.css', 'resources/css/employer-style.css', 'resources/js/app.js'])
-
+    @vite([
+        'resources/css/main.css',
+        'resources/css/employer.css',
+        'resources/css/responsive.css',
+        'resources/js/app.js'
+    ])
+    <style>
+        html{
+            overflow: hidden;
+        }
+    </style>
     
     <title>Document</title>
 </head>
@@ -38,7 +47,7 @@
 
             <p class="search__worker__p mt-2">И находите сотрудников среди тех, кто хочет у вас работать.</p> 
             <p class="search__worker__p">Korgar.TJ — сервис №1 по поиску сотрудников в Таджикистане.</p>
-            <button class="btn btn-primary mt-3 fs-4"><a href="/employer/add-job" class="text-white">Разместить вакансию</a></button>
+            <button class="btn btn-primary mt-3 fs-4"><a href="/employer/admin" class="text-white">Разместить вакансию</a></button>
     </div>
 </body>
 </html>

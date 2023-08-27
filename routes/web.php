@@ -17,8 +17,10 @@ Route::prefix("worker")->group(function(){
 
 Route::prefix("employer")->group(function(){
 
-    Route::get("/", [EmployerController::class, "Index"]);
-    Route::get("/admin", [EmployerController::class, "AdminPanel"])->middleware('admin');
+    Route::get("/",         [EmployerController::class, "Index"]);
+    Route::get("/sign-in",  [EmployerController::class, "SignIn"]);
+    Route::get("/sign-up",  [EmployerController::class, "SignUp"]);
+    Route::get("/admin",    [EmployerController::class, "AdminPanel"])->middleware('admin');
 
 });
 

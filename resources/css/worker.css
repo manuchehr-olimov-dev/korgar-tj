@@ -1,17 +1,8 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-a{
-    text-decoration: none;
-}
 header{
     position: absolute;
     padding: 10px;
     color: white;
-
+    background-color: rgb(255, 255, 255, 0);
 }
 header a{
     color: white;
@@ -75,69 +66,3 @@ header .create-cv:hover{
 }
 
 /* RESPONSIVE */
-
-@media (max-width: 700px) {
-    header{
-        position: static;
-        background-color: rgb(17, 17, 17);
-    }
-    header .left-side h2{
-        font-size: 26px;
-    }
-    header .left-side div *{
-        font-size: 14px;
-    }
-    header .left-side div button{
-        margin: 0px 0px 0px -8px;
-    }
-    .right-side{
-        display: none;
-    }
-    .searchJob{
-        display: flex;
-        justify-content: unset;
-        align-items: unset;
-        background: none !important;
-        margin: 10px;
-        padding: 0px;
-        width: auto;
-        height: auto;
-    }
-    .searchJob .searchForm{
-        margin: 0px;
-    }
-    .searchJob .searchForm form .searchInput{
-        width: 100%;
-        border: 1px solid rgb(121, 121, 121);
-    }
-    .searchJob .searchForm form button{
-        display: none;
-    }
-    .searchJob .searchJob__title__desktop{
-        display: none;
-    }
-    .searchJob .searchJob__title__mobile{
-        display: block;
-    }
-}
-
-@media (min-width: 700px) and (max-width:1024px)
-{
-    .searchJob{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 100vw;
-        height: 100vh;
-    }
-    .searchJob .searchForm, .searchJob h1{
-        margin: 0px 0px 0px 50px;
-    }
-    .searchJob .searchJob__title__desktop{
-        display: block;
-    }
-    .searchJob .searchJob__title__mobile{
-        display: none;
-    }
-}

@@ -17,7 +17,7 @@ class AdminCheckMiddleware
     {
         if(!auth()->user())
         {
-            return redirect("/employer/auth");
+            return redirect("/employer/sign-in");
         }
         return $next($request);
     }
